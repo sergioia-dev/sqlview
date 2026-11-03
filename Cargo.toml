@@ -1,9 +1,12 @@
 [package]
 name = "sqlv"
 version = "0.1.0"
-edition = "2021"
+edition = "2024"
 rust-version = "1.85"
 license = "MIT"
+repository = "https://github.com/sergioia-dev/SQLV"
+keywords = ["sql", "postgresql", "sqlite", "mssql", "mysql", "mariadb"]
+categories = ["development-tools"]
 description = "Keyboard-driven terminal ER diagram viewer for live SQL databases"
 readme = "README.md"
 

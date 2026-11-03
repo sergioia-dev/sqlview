@@ -1,25 +1,11 @@
-# sqlv
+# SQLV a Terminal SQL ER TUI Generator
 
 A keyboard-driven terminal ER diagram viewer. It connects to a live SQL database,
 introspects its tables, columns, primary keys and foreign keys, and draws the
 result as a pannable, zoomable diagram of boxes and connector lines — no browser,
 no export step.
 
-```
-┌ users ───────────────────────────────┐
-│ id            integer   PK           │
-│ email         text      NOT NULL     │
-│ display_name  text                   │
-└──────────────────────────────────────┘
-              │ fk_orders_user_id
-              ▼
-┌ orders ──────────────────────────────┐
-│ id            integer   PK           │
-│ user_id       integer   FK NOT NULL  │
-└──────────────────────────────────────┘
-```
-
-Status bar: `postgresql · app.db · zoom normal · 8 tables, 33 columns · orders · camera 0,0`
+![Diagram Example](./docs/imgs/diagram-example.png
 
 ## Quick start
 
