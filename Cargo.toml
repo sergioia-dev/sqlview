@@ -10,6 +10,13 @@ categories = ["development-tools"]
 description = "Keyboard-driven terminal ER diagram viewer for live SQL databases"
 readme = "README.md"
 
+[lib]
+name = "sqlv"
+
+[[bin]]
+name = "sqlv"
+path = "src/main.rs"
+
 [dependencies]
 async-trait = "0.1"
 crossterm = "0.29"
