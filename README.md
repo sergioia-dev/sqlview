@@ -50,8 +50,8 @@ $ cargo install --path .       # after cloning this repo
 **Nix flake :**
 
 ```console
-$ nix profile add github:sergioia-dev/sqlv # without cloning this repo
-$ nix run github:sergioia-dev/sqlv -- --demo # without cloning this repo
+$ nix profile add github:sergioia-dev/sqlview # without cloning this repo
+$ nix run github:sergioia-dev/sqlview -- --demo # without cloning this repo
 
 $ nix profile add . #after cloning this repo
 $ nix build                    # build only: ./result/bin/sqlv
