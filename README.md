@@ -5,7 +5,7 @@ introspects its tables, columns, primary keys and foreign keys, and draws the
 result as a pannable, zoomable diagram of boxes and connector lines — no browser,
 no export step.
 
-![Diagram Example](./docs/imgs/diagram-example.png
+![Diagram Example](./docs/imgs/diagram-example.png)
 
 ## Quick start
 
