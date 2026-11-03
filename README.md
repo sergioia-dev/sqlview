@@ -38,19 +38,26 @@ at `opt-level >= 2` (see the comment in `Cargo.toml`).
 
 The installed command is `sqlv`.
 
-**Nix flake (primary):**
+**Cargo :**
 
 ```console
-$ nix profile install .        # installs ~/.nix-profile/bin/sqlv
+$ cargo instal sqlview 
+$ sqlview -- --demo 
+
+$ cargo install --path .       # after cloning this repo
+```
+
+**Nix flake :**
+
+```console
+$ nix profile add github:sergioia-dev/sqlv # without cloning this repo
+$ nix run github:sergioia-dev/sqlv -- --demo # without cloning this repo
+
+$ nix profile add . #after cloning this repo
 $ nix build                    # build only: ./result/bin/sqlv
 $ nix run . -- --demo          # run without installing
 ```
 
-**Portable (any platform with a Rust toolchain):**
-
-```console
-$ cargo install --path .       # installs ~/.cargo/bin/sqlv
-```
 
 **NixOS / home-manager:** add this repository as a flake input and put the
 package in `environment.systemPackages` (or `home.packages`):
